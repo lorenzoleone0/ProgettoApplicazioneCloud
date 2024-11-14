@@ -3,13 +3,15 @@ ProgettoApplicazioneCloud
 Questa applicazione web è una semplice gestione di una libreria, che consente agli utenti autenticati di eseguire operazioni CRUD.
 Un utente si può anche registrare.
 
-Il Backend è stato realizzato tramite ASP.Net Core
+Il Backend è stato realizzato tramite ASP.Net Core.
+
 Punti Chiave:
 -I controller, i servizi, i repository e i modelli. (Utente, Libro, Token)
 -l'utilizzo del JWT token per l'autenticazione dell'utente. 
 -Entity Framework per l'utilizzo del database. (guida su come importarlo in SQL server management studio:https://www.geeksforgeeks.org/how-to-import-and-export-sql-server-database/)
 
-Il Frontend è stato realizzato tramite Angular
+Il Frontend è stato realizzato tramite Angular.
+
 Punti Chiave:
 -I componenti e servizi utilizzati per la libreria, l'utente e token.
 -Http per la comunicazione con il backend.
