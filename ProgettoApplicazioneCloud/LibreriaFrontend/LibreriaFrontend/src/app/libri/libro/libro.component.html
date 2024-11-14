@@ -1,0 +1,63 @@
+<div class="library-container">
+  <h2>Libreria</h2>
+
+
+  <h3>Aggiungi un nuovo libro</h3>
+  <div class="form-container">
+    <input [(ngModel)]="nuovoLibro.titolo" placeholder="Titolo">
+    <input [(ngModel)]="nuovoLibro.autore" placeholder="Autore">
+    <input [(ngModel)]="nuovoLibro.dataPubblicazione" placeholder="Data di Pubblicazione" type="date">
+    <input [(ngModel)]="nuovoLibro.editore" placeholder="Editore">
+    <input [(ngModel)]="nuovoLibro.categoria" placeholder="Categoria">
+    <button (click)="aggiungiLibro()">Aggiungi Libro</button>
+  </div>
+
+
+
+  <table *ngIf="libri.length > 0; else noLibri" class="book-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Titolo</th>
+        <th>Autore</th>
+        <th>Data di Pubblicazione</th>
+        <th>Editore</th>
+        <th>Categoria</th>
+        <th>Azioni</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let libro of libri">
+        <td>{{ libro.id_libro }}</td>
+        <td>{{ libro.titolo }}</td>
+        <td>{{ libro.autore }}</td>
+        <td>{{ libro.dataPubblicazione | date: 'MMM d, y'}}</td>
+        <td>{{ libro.editore }}</td>
+        <td>{{ libro.categoria }}</td>
+        <td>
+          <button (click)="selezionaLibro(libro)">Modifica</button>
+          <button (click)="eliminaLibro(libro.id_libro)">Elimina</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <ng-template #noLibri>
+    <p class="no-books-message">Nessun libro trovato.</p>
+  </ng-template>
+
+
+  <div *ngIf="libroSelezionato" class="edit-container">
+    <h3>Modifica libro</h3>
+    <input [(ngModel)]="libroSelezionato.titolo" placeholder="Titolo">
+    <input [(ngModel)]="libroSelezionato.autore" placeholder="Autore">
+    <input [(ngModel)]="libroSelezionato.dataPubblicazione" placeholder="Data di Pubblicazione" type="date">
+    <input [(ngModel)]="libroSelezionato.editore" placeholder="Editore">
+    <input [(ngModel)]="libroSelezionato.categoria" placeholder="Categoria">
+    <button (click)="salvaModifiche()">Salva Modifiche</button>
+    <button (click)="annullaModifica()">Annulla</button>
+  </div>
+</div>
+
+<p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>

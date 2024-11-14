@@ -1,0 +1,2 @@
+C:\Users\PC\source\repos\LibreriaFrontend\LibreriaFrontend\obj\Debug\LibreriaFrontend.esproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\ProgettoApplicazioneCloud\LibreriaFrontend\LibreriaFrontend\obj\Debug\LibreriaFrontend.esproj.CoreCompileInputs.cache
