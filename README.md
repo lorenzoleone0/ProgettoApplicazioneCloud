@@ -11,7 +11,7 @@ Punti Chiave:
 
 -l'utilizzo del JWT token per l'autenticazione dell'utente.
 
--Entity Framework per l'utilizzo del database. (guida su come importarlo in SQL server management studio:https://www.geeksforgeeks.org/how-to-import-and-export-sql-server-database/)
+-Entity Framework per l'utilizzo del database. (guida su come importare il DB in SQL server management studio:https://www.geeksforgeeks.org/how-to-import-and-export-sql-server-database/)
 
 Il **Frontend** è stato realizzato tramite Angular.
 
