@@ -25,10 +25,18 @@ Punti Chiave:
 
 **Database**:
 
-LibreriaDB (file:LibreriaDB.dacpac)
+-LibreriaDB (file:LibreriaDB.dacpac)
 
-Tabelle: Libri e Utenti
+-Tabelle: Libri e Utenti
 
-Colonne Libri: Titolo, Autore, DataPubblicazione, Editore, Categoria
+-Colonne Libri: Titolo, Autore, DataPubblicazione, Editore, Categoria
 
-Colonne Utenti: Nome, Cognome, Email, Password
+-Colonne Utenti: Nome, Cognome, Email, Password
+
+**Interfaccia Utente**:
+
+-Pagina di login
+
+-Pagina di registrazione
+
+-Pagina libreria con metodi CRUD
